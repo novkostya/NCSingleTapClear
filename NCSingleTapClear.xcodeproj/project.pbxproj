@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D7412E4187C8EFA0087980D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7412E3187C8EFA0087980D /* Foundation.framework */; };
+		5D7412EF187C8EFA0087980D /* NCSingleTapClear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D7412E0187C8EFA0087980D /* NCSingleTapClear.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NCSingleTapClear.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7412E3187C8EFA0087980D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D7412E8187C8EFA0087980D /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		5D7412E9187C8EFA0087980D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		5D7412EB187C8EFA0087980D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		5D7412EC187C8EFA0087980D /* NCSingleTapClear-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCSingleTapClear-Prefix.pch"; sourceTree = "<group>"; };
+		5D7412ED187C8EFA0087980D /* NCSingleTapClear.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCSingleTapClear.xm; sourceTree = "<group>"; };
+		5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NCSingleTapClear.mm; sourceTree = "<group>"; };
+		5D7412F3187C8EFA0087980D /* NCSingleTapClear.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCSingleTapClear.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/NCSingleTapClear.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D7412DC187C8EFA0087980D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7412E4187C8EFA0087980D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D7412D5187C8EFA0087980D = {
+			isa = PBXGroup;
+			children = (
+				5D7412E5187C8EFA0087980D /* NCSingleTapClear */,
+				5D7412E2187C8EFA0087980D /* Frameworks */,
+				5D7412E1187C8EFA0087980D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D7412E1187C8EFA0087980D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412E0187C8EFA0087980D /* NCSingleTapClear.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D7412E2187C8EFA0087980D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412E3187C8EFA0087980D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D7412E5187C8EFA0087980D /* NCSingleTapClear */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412ED187C8EFA0087980D /* NCSingleTapClear.xm */,
+				5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */,
+				5D7412E6187C8EFA0087980D /* Package */,
+				5D7412EA187C8EFA0087980D /* Supporting Files */,
+			);
+			path = NCSingleTapClear;
+			sourceTree = "<group>";
+		};
+		5D7412E6187C8EFA0087980D /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412E7187C8EFA0087980D /* DEBIAN */,
+				5D7412F0187C8EFA0087980D /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		5D7412E7187C8EFA0087980D /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412E8187C8EFA0087980D /* control.txt */,
+				5D7412E9187C8EFA0087980D /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		5D7412EA187C8EFA0087980D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412EB187C8EFA0087980D /* PackageVersion.plist */,
+				5D7412EC187C8EFA0087980D /* NCSingleTapClear-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D7412F0187C8EFA0087980D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412F1187C8EFA0087980D /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		5D7412F1187C8EFA0087980D /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412F2187C8EFA0087980D /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		5D7412F2187C8EFA0087980D /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				5D7412F3187C8EFA0087980D /* NCSingleTapClear.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D7412DD187C8EFA0087980D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D7412DF187C8EFA0087980D /* NCSingleTapClear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7412F6187C8EFA0087980D /* Build configuration list for PBXNativeTarget "NCSingleTapClear" */;
+			buildPhases = (
+				5D7412DA187C8EFA0087980D /* ShellScript */,
+				5D7412DB187C8EFA0087980D /* Sources */,
+				5D7412DC187C8EFA0087980D /* Frameworks */,
+				5D7412DD187C8EFA0087980D /* Headers */,
+				5D7412DE187C8EFA0087980D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCSingleTapClear;
+			productName = NCSingleTapClear;
+			productReference = 5D7412E0187C8EFA0087980D /* NCSingleTapClear.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D7412D6187C8EFA0087980D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 5D7412D9187C8EFA0087980D /* Build configuration list for PBXProject "NCSingleTapClear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D7412D5187C8EFA0087980D;
+			productRefGroup = 5D7412E1187C8EFA0087980D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D7412DF187C8EFA0087980D /* NCSingleTapClear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D7412DA187C8EFA0087980D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		5D7412DE187C8EFA0087980D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D7412DB187C8EFA0087980D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7412EF187C8EFA0087980D /* NCSingleTapClear.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D7412F4187C8EFA0087980D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		5D7412F5187C8EFA0087980D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		5D7412F7187C8EFA0087980D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCSingleTapClear/NCSingleTapClear-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		5D7412F8187C8EFA0087980D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCSingleTapClear/NCSingleTapClear-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D7412D9187C8EFA0087980D /* Build configuration list for PBXProject "NCSingleTapClear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7412F4187C8EFA0087980D /* Debug */,
+				5D7412F5187C8EFA0087980D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7412F6187C8EFA0087980D /* Build configuration list for PBXNativeTarget "NCSingleTapClear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7412F7187C8EFA0087980D /* Debug */,
+				5D7412F8187C8EFA0087980D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D7412D6187C8EFA0087980D /* Project object */;
+}

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D7412E4187C8EFA0087980D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7412E3187C8EFA0087980D /* Foundation.framework */; };
 		5D7412EF187C8EFA0087980D /* NCSingleTapClear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */; };
+		5D7412FA187C8F940087980D /* SBNotificationsSectionHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7412F9187C8F940087980D /* SBNotificationsSectionHeaderView.h */; };
+		5D7412FC187C8FB00087980D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7412FB187C8FB00087980D /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +20,11 @@
 		5D7412E9187C8EFA0087980D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		5D7412EB187C8EFA0087980D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		5D7412EC187C8EFA0087980D /* NCSingleTapClear-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCSingleTapClear-Prefix.pch"; sourceTree = "<group>"; };
-		5D7412ED187C8EFA0087980D /* NCSingleTapClear.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCSingleTapClear.xm; sourceTree = "<group>"; };
+		5D7412ED187C8EFA0087980D /* NCSingleTapClear.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NCSingleTapClear.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NCSingleTapClear.mm; sourceTree = "<group>"; };
 		5D7412F3187C8EFA0087980D /* NCSingleTapClear.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCSingleTapClear.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/NCSingleTapClear.plist; sourceTree = "<group>"; };
+		5D7412F9187C8F940087980D /* SBNotificationsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNotificationsSectionHeaderView.h; sourceTree = "<group>"; };
+		5D7412FB187C8FB00087980D /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D7412FC187C8FB00087980D /* libsubstrate.dylib in Frameworks */,
 				5D7412E4187C8EFA0087980D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +60,7 @@
 		5D7412E2187C8EFA0087980D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D7412FB187C8FB00087980D /* libsubstrate.dylib */,
 				5D7412E3187C8EFA0087980D /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -63,6 +69,7 @@
 		5D7412E5187C8EFA0087980D /* NCSingleTapClear */ = {
 			isa = PBXGroup;
 			children = (
+				5D7412F9187C8F940087980D /* SBNotificationsSectionHeaderView.h */,
 				5D7412ED187C8EFA0087980D /* NCSingleTapClear.xm */,
 				5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */,
 				5D7412E6187C8EFA0087980D /* Package */,
@@ -129,6 +136,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D7412FA187C8F940087980D /* SBNotificationsSectionHeaderView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +233,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -258,6 +267,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -287,11 +297,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCSingleTapClear/NCSingleTapClear-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnAnyBuild = YES;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
@@ -307,11 +321,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCSingleTapClear/NCSingleTapClear-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnAnyBuild = YES;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;

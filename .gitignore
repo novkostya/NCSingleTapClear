@@ -1,0 +1,7 @@
+.DS_Store
+*.xcuserdatad
+UserInterfaceState.xcuserstate
+*.xccheckout
+*.dylib
+/LatestBuild
+/Packages

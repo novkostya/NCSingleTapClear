@@ -1,16 +1,16 @@
 Package: ru.novkostya.NCSingleTapClear
 Name: NCSingleTapClear
 Version: 1.0-1
-Description: 
-Section: System
-Depends: firmware (>= 5.0), mobilesubstrate
+Description: Clear notifications with "x" button single tap
+Section: Tweaks
+Depends: firmware (>= 7.0), mobilesubstrate
 Conflicts: 
 Replaces: 
 Priority: optional
 Architecture: iphoneos-arm
 Author: Konstantin Novikov
-dev: 
-Homepage: 
+dev: Konstantin Novikov
+Homepage: https://github.com/novkostya/NCSingleTapClear
 Depiction: 
 Maintainer: 
 Icon: 

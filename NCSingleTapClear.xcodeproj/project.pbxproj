@@ -16,7 +16,6 @@
 /* Begin PBXFileReference section */
 		5D7412E0187C8EFA0087980D /* NCSingleTapClear.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NCSingleTapClear.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7412E3187C8EFA0087980D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5D7412E8187C8EFA0087980D /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		5D7412E9187C8EFA0087980D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		5D7412EB187C8EFA0087980D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		5D7412EC187C8EFA0087980D /* NCSingleTapClear-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCSingleTapClear-Prefix.pch"; sourceTree = "<group>"; };
@@ -90,7 +89,6 @@
 		5D7412E7187C8EFA0087980D /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				5D7412E8187C8EFA0087980D /* control.txt */,
 				5D7412E9187C8EFA0087980D /* control */,
 			);
 			name = DEBIAN;
@@ -355,6 +353,7 @@
 				5D7412F8187C8EFA0087980D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

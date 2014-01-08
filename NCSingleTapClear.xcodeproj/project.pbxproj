@@ -303,7 +303,7 @@
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
@@ -327,7 +327,7 @@
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;

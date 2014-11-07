@@ -11,6 +11,7 @@
 		5D7412EF187C8EFA0087980D /* NCSingleTapClear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */; };
 		5D7412FA187C8F940087980D /* SBNotificationsSectionHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7412F9187C8F940087980D /* SBNotificationsSectionHeaderView.h */; };
 		5D7412FC187C8FB00087980D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7412FB187C8FB00087980D /* libsubstrate.dylib */; };
+		5DA129CA1A0CD38600521E86 /* SBNotificationCenterHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA129C91A0CD38600521E86 /* SBNotificationCenterHeaderView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5D7412F3187C8EFA0087980D /* NCSingleTapClear.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCSingleTapClear.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/NCSingleTapClear.plist; sourceTree = "<group>"; };
 		5D7412F9187C8F940087980D /* SBNotificationsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNotificationsSectionHeaderView.h; sourceTree = "<group>"; };
 		5D7412FB187C8FB00087980D /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		5DA129C91A0CD38600521E86 /* SBNotificationCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNotificationCenterHeaderView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5D7412F9187C8F940087980D /* SBNotificationsSectionHeaderView.h */,
+				5DA129C91A0CD38600521E86 /* SBNotificationCenterHeaderView.h */,
 				5D7412ED187C8EFA0087980D /* NCSingleTapClear.xm */,
 				5D7412EE187C8EFA0087980D /* NCSingleTapClear.mm */,
 				5D7412E6187C8EFA0087980D /* Package */,
@@ -134,6 +137,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA129CA1A0CD38600521E86 /* SBNotificationCenterHeaderView.h in Headers */,
 				5D7412FA187C8F940087980D /* SBNotificationsSectionHeaderView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

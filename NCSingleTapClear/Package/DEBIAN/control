@@ -1,6 +1,6 @@
 Package: ru.novkostya.NCSingleTapClear
 Name: NCSingleTapClear
-Version: 1.0-2
+Version: 1.1
 Description: Clear notifications with "x" button single tap
 Section: Tweaks
 Depends: firmware (>= 7.0), mobilesubstrate

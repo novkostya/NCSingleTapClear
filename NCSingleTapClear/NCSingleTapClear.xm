@@ -1,4 +1,5 @@
 #import "SBNotificationsSectionHeaderView.h"
+#import "SBNotificationCenterHeaderView.h"
 
 %hook SBNotificationsSectionHeaderView
 
@@ -10,6 +11,16 @@
         sender = clearButton;
         MSHookIvar<BOOL>(self, "_showingClear") = YES;
     }
+    %orig(sender);
+}
+
+%end
+
+%hook SBNotificationCenterHeaderView
+
+- (void)buttonAction:(id)sender
+{
+    MSHookIvar<id>(self, "_xAction") = MSHookIvar<id>(self, "_clearAction");
     %orig(sender);
 }
 
